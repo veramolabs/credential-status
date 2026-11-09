@@ -122,12 +122,12 @@ export class Status implements StatusResolver {
           decoded?.payload?.vc?.credentialStatus || // JWT Verifiable Credential payload
           decoded?.payload?.vp?.credentialStatus || // JWT Verifiable Presentation payload
           decoded?.payload?.credentialStatus // legacy JWT payload
-      } catch (e1: unknown) {
+      } catch {
         // not a JWT credential or presentation
         try {
           const decoded = JSON.parse(credential)
           statusEntry = decoded?.credentialStatus
-        } catch (e2: unknown) {
+        } catch {
           // not a JSON either.
         }
       }
@@ -148,7 +148,7 @@ export class Status implements StatusResolver {
 
     if (!method) {
       throw new Error(
-        `unknown_method: credentialStatus method ${statusEntry.type} unknown. Validity can not be determined.`,
+        `unknown_method: credentialStatus method ${statusEntry.type} unknown. Validity can not be determined.`
       )
     } else {
       return method(credential, didDoc)
