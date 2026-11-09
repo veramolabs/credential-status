@@ -1,6 +1,6 @@
 # credential-status
 
-[![codecov](https://codecov.io/gh/uport-project/credential-status/branch/develop/graph/badge.svg)](https://codecov.io/gh/uport-project/credential-status)
+[![codecov](https://codecov.io/gh/veramolabs/credential-status/branch/develop/graph/badge.svg)](https://codecov.io/gh/veramolabs/credential-status)
 
 A status method aggregator for verifiable credentials.
 
