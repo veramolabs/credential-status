@@ -1,3 +1,17 @@
+## 4.0.0
+
+### Major Changes
+
+- [#1](https://github.com/veramolabs/credential-status/pull/1) [`d9fd28e`](https://github.com/veramolabs/credential-status/commit/d9fd28efc68c4b01dd1267399464348b4d314358) Thanks [@mirceanis](https://github.com/mirceanis)! - BREAKING CHANGE: package exports have been refactored
+  Restructured project configuration and updated dependencies:
+    - use pnpm instead of yarn
+    - restructure GH workflows for trusted publishing
+    - use vitest instead of jest
+    - use changesets instead of semantic-release
+    - renamed repository URL to point to the new veramolabs home
+- **deps:** Update dependency did-jwt to v9.0.3
+- **deps:** Update dependency did-resolver to v6.0.0
+
 ## [3.0.4](https://github.com/uport-project/credential-status/compare/3.0.3...3.0.4) (2024-03-26)
 
 ### Bug Fixes
@@ -131,14 +145,6 @@
 ### Bug Fixes
 
 - declare ts types in package.json ([9c4dba9](https://github.com/uport-project/credential-status/commit/9c4dba97f845893b59c124eb3e4fafd56acc2e26))
-
-## 4.0.0
-
-### Major Changes
-
-- [#1](https://github.com/veramolabs/credential-status/pull/1) [`d9fd28e`](https://github.com/veramolabs/credential-status/commit/d9fd28efc68c4b01dd1267399464348b4d314358) Thanks [@mirceanis](https://github.com/mirceanis)! - BREAKING CHANGE: package exports have been refactored
-
-  Restructured project configuration and update dependencies: * use pnpm instead of yarn * restructure GH workflows for trusted publishing * use vitest instead of jest * use changesets instead of semantic-release * rename repository URL to point to the new home
 
 # 1.0.0 (2019-10-31)
 
